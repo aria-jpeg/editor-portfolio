@@ -1,0 +1,246 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.25;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: xx-large;
+    color: #222
+}
+
+h2 {
+    font-size: larger;
+    color: #222
+}
+
+header {
+    background: #da87eb;
+    color: #ffffff;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #fff;
+    margin: 0 24px
+}
+
+header a {
+    font-size: 20px;
+    margin: 0 12px;
+    color: #f0f0f0;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+head a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    padding: 350px 0;
+    text-align: center;
+    background: url(images/hero-1.gif) no-repeat center center/cover;
+}
+
+#hero h1 {
+    margin-bottom: 0;
+    font-size: 72px;
+    color: white;
+}
+
+#hero p {
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 24px;
+    color: white;
+}
+
+#hero button {
+    margin: 0 14px;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.5);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+#hero button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+#hero button:hover {
+    color: #e8e8e8;
+}
+
+#hero button:hover::before {
+    width: 100%;
+}
+
+#hero a:hover {
+    font-size: 18px;
+}
+
+#about {
+    padding: 48px;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 48px;
+    margin: 64px;
+}
+
+#about p {
+    font-size: 28px;
+    max-width: 1200px;
+    margin: 64px auto;
+}
+
+#about p strong {
+    font-weight: bold;
+}
+
+#works {
+    font-size: 30px;
+    padding: 50px 0;
+    background: #0c0c0c;
+    text-align: center;
+
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+}
+
+#works h1 {
+    font-size: 48px;
+    color: #f9f9f9;
+    margin-bottom: 78px;
+}
+
+#works h2 {
+    font-size: 38px;
+    color: #a8a8a8;
+}
+
+#works .works-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 78px;
+}
+
+#works .works-item button {
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.2s;
+    padding: 10px 20px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border: 0;
+    font-size: 48px;
+    box-shadow: 0px 8px 12px 8px rgba(0, 0, 0, 1);
+    color: white;
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+.ethera {
+    background-image: url(images/ethera_icon.png);
+}
+
+.rlprojects {
+    background-image: url(images/pfp.png);
+}
+
+.mcpvp {
+    background-image: url(images/minecraft.jpeg);
+}
+
+.mcprojects {
+    background-image: url(images/minecraft.jpeg);
+}
+
+#works .works-item button:hover {
+    transform: scale(1.05);
+}
+
+#works .works-item button:active {
+    transform: scale(0.95);
+}
+
+#works .works-item i {
+    font-size: 24px;
+    text-decoration: wavy;
+}
+
+#contact {
+    padding: 20px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#contact li {
+    list-style: none;
+}
+
+#contact img {
+    vertical-align: middle;
+    width: 24px;
+    margin-right: 4px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
