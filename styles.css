@@ -53,7 +53,11 @@ head a:hover {
 #hero {
     padding: 350px 0;
     text-align: center;
+<<<<<<< HEAD
     background: url(https://media.githubusercontent.com/media/aria-jpeg/portifolio-test/refs/heads/main/images/hero-1.gif) no-repeat center center/cover;
+=======
+    background: url("https://media.githubusercontent.com/media/aria-jpeg/portifolio-test/refs/heads/main/images/hero-1.gif") no-repeat center center/cover;
+>>>>>>> 40db8a3164ece56237f26faeaef5214da8407c76
 }
 
 #hero h1 {
