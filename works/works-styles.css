@@ -54,11 +54,11 @@ header a {
 }
 
 #hero.personal-hero {
-    background: url(../resources/rl-vids/personal/hero.gif) no-repeat center center/cover;
+    background: url(https://media.githubusercontent.com/media/aria-jpeg/portifolio-test/refs/heads/main/resources/rl-vids/personal/hero.gif) no-repeat center center/cover;
 }
 
 #hero.ethera-hero {
-    background: url(../resources/rl-vids/ethera/hero.gif) no-repeat center center/cover;
+    background: url(https://media.githubusercontent.com/media/aria-jpeg/portifolio-test/refs/heads/main/resources/rl-vids/ethera/hero.gif) no-repeat center center/cover;
 }
 
 #hero h1 {
