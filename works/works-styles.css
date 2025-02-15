@@ -1,0 +1,207 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.25;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: xx-large;
+    color: #222
+}
+
+h2 {
+    font-size: larger;
+    color: #222
+}
+
+header {
+    background: #da87eb;
+    color: #ffffff;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    vertical-align: middle;
+}
+
+header .back {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+    margin: 0 24px
+}
+
+header a {
+    font-size: 18px;
+    margin: 0 12px;
+    color: #f0f0f0;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#hero {
+    padding: 250px 0;
+    text-align: center;
+}
+
+#hero.personal-hero {
+    background: url(../resources/rl-vids/personal/hero.gif) no-repeat center center/cover;
+}
+
+#hero.ethera-hero {
+    background: url(../resources/rl-vids/ethera/hero.gif) no-repeat center center/cover;
+}
+
+#hero h1 {
+    font-size: 72px;
+    color: white;
+}
+
+#hero button {
+    margin: 0 14px;
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.5);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+#hero button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+#hero button:hover {
+    color: #e8e8e8;
+}
+
+#hero button:hover::before {
+    width: 100%;
+}
+
+#hero a:hover {
+    font-size: 18px;
+}
+
+#videos {
+    padding-bottom: 52px;
+    padding-top: 28px;
+    background: #0c0c0c;
+    text-align: center;
+
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+    background-size: 55px 55px;
+}
+
+#videos h1 {
+    color: #fff;
+    font-size: 72px;
+    margin-bottom: 0;
+}
+
+#videos p {
+    color: #cccccc;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+#videos .videos-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px
+}
+
+#videos .item {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(330deg, #0f0f0f, #2e2e2e);
+    box-shadow: 0px 8px 12px 8px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transition: all 0.25s;
+    max-width: 320px;
+}
+
+#videos .item:hover {
+    transform: scale(1.15);
+}
+
+#videos .item video {
+    margin-top: 12px;
+    border-radius: 20px;
+    width: 288px;
+    height: 512px;
+}
+
+#videos .item .date {
+    color: #fff;
+    margin: 4px;
+    font-size: 16px;
+}
+
+#videos .item .description {
+    color: #fff;
+    margin: 4px;
+    font-size: 16px;
+}
+
+#more {
+    font-size: 23px;
+    text-align: center;
+}
+
+#more p {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#more h1 {
+    margin: 0;
+    font-size: 48px;
+    padding: 32px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
