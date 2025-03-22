@@ -147,14 +147,16 @@ head a:hover {
 }
 
 #works h1 {
-    font-size: 48px;
-    color: #f9f9f9;
-    margin-bottom: 78px;
+    color: #fff;
+    font-size: 72px;
+    margin-bottom: 0;
 }
 
-#works h2 {
-    font-size: 38px;
-    color: #a8a8a8;
+#works p {
+    color: #cccccc;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 48px;
 }
 
 #works .works-section {
@@ -213,6 +215,59 @@ head a:hover {
 #works .works-item i {
     font-size: 24px;
     text-decoration: wavy;
+}
+
+#videos h1 {
+    color: #fff;
+    font-size: 72px;
+    margin-bottom: 0;
+}
+
+#videos p {
+    color: #cccccc;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 48px;
+}
+
+#videos .videos-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 72px
+}
+
+#videos .item {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(330deg, #0f0f0f, #2e2e2e);
+    box-shadow: 0px 8px 12px 8px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    transition: all 0.25s;
+    max-width: 320px;
+}
+
+#videos .item:hover {
+    transform: scale(1.15);
+}
+
+#videos .item video {
+    margin-top: 12px;
+    border-radius: 20px;
+    width: 288px;
+    height: 512px;
+}
+
+#videos .item .date {
+    color: #fff;
+    margin: 4px;
+    font-size: 16px;
+}
+
+#videos .item .description {
+    color: #fff;
+    margin: 4px;
+    font-size: 16px;
 }
 
 #contact {
