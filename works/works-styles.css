@@ -143,37 +143,71 @@ header a {
     gap: 72px
 }
 
-#videos .item {
+#videos .hidden-item {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+
     padding: 10px 20px;
     border-radius: 30px;
     background-image: linear-gradient(330deg, #0f0f0f, #2e2e2e);
     box-shadow: 0px 8px 12px 8px rgba(0, 0, 0, 0.75);
     text-align: center;
-    transition: all 0.25s;
+    transition: all 1s;
     max-width: 320px;
 }
 
-#videos .item:hover {
-    transform: scale(1.15);
-}
-
-#videos .item video {
+#videos .hidden-item video {
     margin-top: 12px;
     border-radius: 20px;
     width: 288px;
     height: 512px;
 }
 
-#videos .item .date {
+#videos .hidden-item .date {
     color: #fff;
     margin: 4px;
     font-size: 16px;
 }
 
-#videos .item .description {
+#videos .hidden-item .description {
     color: #fff;
     margin: 4px;
     font-size: 16px;
+}
+
+#videos .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#videos .hidden-item:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+#videos .hidden-item:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+#videos .hidden-item:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+#videos .hidden-item:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+#videos .hidden-item:nth-child(6) {
+    transition-delay: 1000ms;
+}
+
+#videos .hidden-item:nth-child(7) {
+    transition-delay: 1200ms;
+}
+
+#videos .hidden-item:nth-child(8) {
+    transition-delay: 1400ms;
 }
 
 #more {

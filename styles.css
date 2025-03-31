@@ -237,73 +237,88 @@ head a:hover {
     gap: 72px
 }
 
-#videos .item {
+#videos .hidden-item {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+
     padding: 10px 20px;
 
     border-radius: 30px;
     background-image: linear-gradient(330deg, #0f0f0f, #2e2e2e);
     box-shadow: 0px 8px 12px 8px rgba(0, 0, 0, 0.75);
     text-align: center;
-    transition: all 0.25s;
+    transition: all 1s;
     max-width: 560px;
 }
 
-#videos .item:hover {
-    transform: scale(1.15);
+#videos .hidden-item:nth-child(2) {
+    transition-delay: 200ms;
 }
 
-#videos .item video {
+#videos .hidden-item:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+#videos .hidden-item video {
     margin-top: 12px;
     border-radius: 20px;
     width: 288px;
     height: 512px;
 }
 
-#videos .item .date {
+#videos .hidden-item .date {
     color: #fff;
     margin: 4px;
     font-size: 16px;
 }
 
-#videos .item .description {
+#videos .hidden-item .description {
     color: #fff;
     margin: 4px;
     font-size: 16px;
 }
 
-#videos .youtube-item {
+#videos .hidden-youtube-item {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+
     padding: 10px 20px;
     margin: 0px 500px;
     border-radius: 30px;
     background-image: linear-gradient(330deg, #0f0f0f, #2e2e2e);
     box-shadow: 0px 8px 12px 8px rgba(0, 0, 0, 0.75);
     text-align: center;
-    transition: all 0.25s;
+    transition: all 1s;
     max-width: 560px;
     max-height: 386px;
 }
 
-#videos .youtube-itemtem:hover {
-    transform: scale(1.15);
-}
 
-
-#videos .youtube-item iframe {
+#videos .hidden-youtube-item iframe {
     margin-top: 12px;
     border-radius: 20px;
 }
 
-#videos .youtube-item .date {
+#videos .hidden-youtube-item .date {
     color: #fff;
     margin: 4px;
     font-size: 16px;
 }
 
-#videos .youtube-item .description {
+#videos .hidden-youtube-item .description {
     color: #fff;
     margin: 4px;
     font-size: 16px;
 }
+
+#videos .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 
 #contact {
     padding: 20px 0;
